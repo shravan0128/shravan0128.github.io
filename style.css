@@ -149,32 +149,6 @@ nav .logo {
     transition: transform 0.1s ease-out;
 }
 
-.circular-text-container {
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-    width: 150px;
-    height: 150px;
-}
-
-.circular-text-container svg {
-    width: 100%;
-    height: 100%;
-    animation: spin 8s linear infinite;
-    transform-origin: center center;
-    overflow: visible;
-}
-
-.circular-text-container text {
-    font-size: 22px;
-    fill: var(--text-light);
-}
-
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
 
 /* --- ABOUT SECTION --- */
 #about {
@@ -206,7 +180,7 @@ nav .logo {
     line-height: 1.8;
     color: #ccc;
     font-variation-settings: 'wght' 400; 
-    text-align: center; /* UPDATED: Changed from justify to center */
+    text-align: center; 
 }
 
 .proximity-text .word-wrapper {
@@ -298,6 +272,21 @@ nav .logo {
     grid-column: span 1;
 }
 
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: left;
+}
+
+.skill-category h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--electric-border-color);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+    padding-bottom: 0.5rem;
+}
+
 .box-content {
     display: flex;
     flex-direction: column;
@@ -305,12 +294,6 @@ nav .logo {
     font-family: 'Roboto Flex', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-}
-
-.box-full .box-content {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 4rem;
 }
 
 .skills-list {
@@ -322,6 +305,7 @@ nav .logo {
 .skills-list li {
     position: relative;
     margin-bottom: 0.75rem;
+    font-size: 0.85rem;
     font-weight: bold;
 }
 
@@ -544,9 +528,6 @@ nav .logo {
         font-size: clamp(1.2rem, 5vw, 1.5rem);
         margin-bottom: 3rem;
     }
-    .circular-text-container {
-        display: none;
-    }
 
     /* About Section */
     #about h2 {
@@ -564,10 +545,11 @@ nav .logo {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    .box-full .box-content {
-        flex-direction: column;
-        gap: 2rem;
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
     }
+
     .grid-box {
         padding: 1.5rem;
     }

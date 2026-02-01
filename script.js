@@ -184,13 +184,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 1000 + (index * 75)); 
         });
     }
-
-
-    // --- HERO: CIRCULAR TEXT ANIMATION ---
-    const circularTextContent = document.getElementById('circular-text-content');
-    if (circularTextContent) {
-        circularTextContent.textContent = "- CYBER WORLD - CYBER WORLD ";
-    }
     
     
     // --- MAGNETIC BUTTON EFFECT ---

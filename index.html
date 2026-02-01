@@ -48,14 +48,6 @@
                     <button class="magnet-button">Contact</button>
                 </div>
             </div>
-            <div class="circular-text-container">
-                <svg viewBox="0 0 150 150">
-                    <path id="circlePath" fill="none" d="M 75, 75 m -65, 0 a 65,65 0 1,1 130,0 a 65,65 0 1,1 -130,0 "/>
-                    <text>
-                        <textPath href="#circlePath" id="circular-text-content"></textPath>
-                    </text>
-                </svg>
-            </div>
         </section>
 
         <section id="about">
@@ -77,26 +69,73 @@
         <section id="services">
             <div class="new-grid-container">
                 <div class="grid-box box-full electric-border">
-                    <div class="box-content">
-                        <ul class="skills-list">
-                            <li>Threat Hunting and Intelligence Analysis</li>
-                            <li>Investigating and Responding to Security Incidents</li>
-                            <li>Cyber Security Frameworks (OWASP Top 10, MITRE ATTACK, ISO 27001)</li>
-                            <li>Automation Tools (n8n)</li>
-                            <li>Understanding of Core Networking Concepts (OSI & TCP/IP, DNS, HTTP/HTTPS)</li>
-                            <li>Bash Scripting (basic), Python Scripting (basic)</li>
-                        </ul>
-                        <ul class="skills-list">
-                            <li>Hands-on Experience with Security Tools (Wireshark, Nmap, Metasploit, BurpSuite)</li>
-                            <li>Foundational Knowledge of Cloud Security (AWS, Google Cloud)</li>
-                            <li>Securing Operating Systems (Windows, Linux, macOS)</li>
-                        </ul>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Core Cybersecurity & Defense</h4>
+                            <ul class="skills-list">
+                                <li>Threat Hunting & Intelligence Analysis</li>
+                                <li>Incident Response</li>
+                                <li>Digital Forensics</li>
+                                <li>Advanced Threat Modeling</li>
+                                <li>Log Analysis</li>
+                                <li>Real-Time Event Correlation</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Security Frameworks & Standards</h4>
+                            <ul class="skills-list">
+                                <li>OWASP Top 10</li>
+                                <li>MITRE ATT&CK</li>
+                                <li>ISO 27001</li>
+                                <li>Framework Implementation</li>
+                                <li>Critical Infrastructure Protection</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Technical Tools & Platforms</h4>
+                            <ul class="skills-list">
+                                <li>Burp Suite (Proxy Server & Advanced Pentesting)</li>
+                                <li>Nmap & Wireshark</li>
+                                <li>Metasploit</li>
+                                <li>Splunk (SIEM)</li>
+                                <li>Elasticsearch</li>
+                                <li>n8n (Automation)</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>AI & Data Science for Security</h4>
+                            <ul class="skills-list">
+                                <li>Machine Learning (ML) for Cybersecurity</li>
+                                <li>Artificial Intelligence (AI) & LLM</li>
+                                <li>Security Analytics</li>
+                                <li>Data Science</li>
+                                <li>Data Normalization</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Networking & Infrastructure</h4>
+                            <ul class="skills-list">
+                                <li>Cloud Security (AWS & Google Cloud)</li>
+                                <li>OSI & TCP/IP Model</li>
+                                <li>DNS & HTTP/HTTPS Protocols</li>
+                                <li>OS Hardening (Windows, Linux, macOS)</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Programming & Automation</h4>
+                            <ul class="skills-list">
+                                <li>Python (Security Tooling)</li>
+                                <li>Bash Scripting</li>
+                                <li>Flask (Web Development)</li>
+                                <li>GitHub Actions (CI/CD Automation)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div id="projects" class="grid-box box-half electric-border">
                     <div class="box-content">
                         <div class="project">
-                            <h3>Dark Web Intelligence Search Tool</h3>
+                            <h3>VibeGuard - AI Code Security Auditor</h3>
                             <p>Built a Flask-based web app that identifies .onion sites containing specified keywords or image content using Elasticsearch and AI-driven similarity search.</p>
                         </div>
                         <div class="project">
@@ -104,14 +143,32 @@
                             <p>Developed an automated web pentest pipeline that performs recon, subdomain enumeration, Nmap port scanning, and vulnerability checks, producing prioritized findings and exportable reports.</p>
                         </div>
                         <div class="project">
+                            <h3>Dark Web Intelligence Search Tool</h3>
+                            <p>Built a Flask-based web app that identifies .onion sites containing specified keywords or image content using Elasticsearch and AI-driven similarity search.</p>
+                        </div>
+                        <div class="project">
+                            <h3>Brute Force Attack Detection System</h3>
+                            <p>Developed a system in Splunk to detect and generate alerts for potential brute force attacks by analyzing authentication logs.</p>
+                        </div>
+                        <div class="project">
                             <h3>Password Strength Checker</h3>
                             <p>Developed an adaptive password-strength checker, breached-password checks.</p>
+                        </div>
+                        <div class="project">
+                            <h3>Automated IPO Alert Bot</h3>
+                            <p>Built a secure Python bot that scrapes IPO data, validates results, and sends Telegram alerts. Deployed via GitHub Actions using encrypted secrets for fully automated daily monitoring.</p>
                         </div>
                     </div>
                 </div>
                 <div id="certificates" class="grid-box box-half electric-border">
                     <div class="box-content certificate-content">
-                        <h3>Certified Information Security and Ethical Hacker (CISEH)</h3>
+                        <h3>Certified Information and Offensive Security Expert (CIOSE)</h3>
+                        <h3>Certified Cyber Defence Professional (CCDP)</h3>
+                        <h3>Burp Suite for Advance Web Penetration Testing</h3>
+                        <h3>Data Science for Cybersecurity</h3>
+                        <h3>Machine Learning for Application In Digital Forensics</h3>
+                        <h3>Certified Cybersecurity Educator Professional (CCEP)</h3>
+                        <h3>Foundations of Log Analysis for Cyber Defense</h3>
                         <h3>Digital Defense Drill</h3>
                         <h3>Introduction to Critical Infrastructure Protection</h3>
                         <h3>Foundation of Ethical Hacking</h3>
